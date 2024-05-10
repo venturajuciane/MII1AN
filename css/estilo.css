@@ -1,0 +1,126 @@
+@charset "UFT-8"; /*#E6DB45 #7C89E6 #85E6B3 #E67A45 #BD45E6 #919BE6*/
+ 
+/* Variáveis são espaços na memória que vão armazenar alguma coisa*/
+ 
+:root{
+    --cor1: #E6DB45;
+    --cor2: #85E6B3;
+    --cor3: #7C89E6;
+    --cor4: #E67A45;
+    --cor5: #BD45E6;
+ 
+}
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+ 
+    /*tag, #id,.class */
+ 
+    body{
+        background-color: var(--cor5);
+        font-family: sans-serif;
+    }
+ 
+    header{
+        background-image: linear-gradient(to top, var(--cor4),var(--cor5));/*direção do gradiente, corInicial, corTerminal*/
+        min-height: 130px;/*altura mínima*/
+        text-align: center;
+        padding-top: 50px;/*Espaço dentro da caixa de 50px para cima*/
+        padding-bottom: 20px;
+    }
+ 
+    header > h1{
+        color: white;
+        font-weight: 900;/*100 a 900, ligther, bold, bolder*/
+        margin-bottom: 20px;/*Espaçamento fora da 'caixa'*/
+ 
+    }
+ 
+    header > p{
+        color: black;
+    }
+ 
+    nav{
+        background-color: var(--cor2);
+        padding: 10px;
+        box-shadow: 19px 3px 10px 0px black;/*x, y, extensão, cor*/
+    }
+
+    nav a{
+        text-decoration: none;
+        padding: 10px ;
+        color: black; 
+        border-radius: 5px;
+        transition-duration: 0.5s;
+    }
+
+    nav > a:hover{/*pseudo - classe - adiciona um estado especial ao elemento*/
+    background-color: var(--cor4);
+}
+
+main{
+    background-color: rgb(226, 49, 49);
+     color: black;
+     min-width: 320px ; /*Largura minima*/
+     max-width: 1000px; /*Largura maxima*/
+     margin: auto;/*Ultilizando nesse contexto para centralizar*/
+     padding: 20px; /*espaço dentro da caixa do elemento*/
+     border-bottom-left-radius: 10px;
+     border-bottom-right-radius: 10px;
+     text-align: center;/*Alinhamento de texto - centrt, left, rigth, justify*/
+     box-shadow: 3px 2px 5px 0px;/*sombra de caixa*/
+
+}
+h2{
+    background-image: linear-gradient(to right, var(--cor1), transparent);/*a direção, a cor que começa a cor que termina*/
+    padding: 5px 0;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+main p{
+    font-size: 1.2rem;
+    text-align: justify;
+    text-indent: 30px;/*Espaçamento de primeira linha de paragrafo*/
+    margin: 15px 0;
+}
+main img{
+    width: 30%;
+    border: 10px double gray;/*border, esoessura estilo cor*/
+
+}
+
+iframe{
+    width: 90%;
+    border: 10px double gainsboro;
+    margin-bottom:10px ;
+}
+figcaption{
+    font-size: 10px;
+}
+
+aside{
+    background-color: var(--cor3);
+    padding: 20px 0;
+    border-radius: 5px;
+}
+aside > ul{
+    list-style-position: inside; /*posição do marcador da lista*/
+    text-align: justify;
+    padding: 10px;/*Espaçamento dentro da caixa para cima*/
+} 
+
+aside h3{
+    background-color: var(--cor1);
+    padding: 10px;
+    margin: -20px -0.5px 0px -0.5px;
+
+}
+
+footer p{
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+}
